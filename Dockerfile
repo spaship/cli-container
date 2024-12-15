@@ -11,8 +11,10 @@ ARG SPASHIP_CLI_VERSION=1.8.0
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash \
     && yarn global add @spaship/cli@$SPASHIP_CLI_VERSION
 
-# Ensure yarn global bin is in the user's PATH
-ENV PATH="/home/spashipuser/.yarn/bin:/home/spashipuser/.config/yarn/global/node_modules/.bin:$PATH"
+# Ensure yarn global bin is in the user's PATH, Hide node depreciation warnings
+ENV PATH="/home/spashipuser/.yarn/bin:/home/spashipuser/.config/yarn/global/node_modules/.bin:$PATH" \
+    NODE_OPTIONS="$NODE_OPTIONS --no-deprecation"
+
 
 # Set the ENTRYPOINT to spaship command directly
 ENTRYPOINT ["spaship"]

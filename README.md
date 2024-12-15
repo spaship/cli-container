@@ -4,6 +4,14 @@ A self-contained SPAShip CLI container image to simplify your SPA deployments vi
 
 This repository provides a container image hosted at [quay.io/redhat_emp1/spaship-cli](https://quay.io/redhat_emp1/spaship-cli) for running the SPAShip CLI tool in a containerized environment.
 
+#### Advantages
+- Seamless integration with GitLab and GitHub CI/CD pipelines
+- Ensures the use of the latest SPAShip CLI version automatically, as the image is consistently updated with new releases
+- Eliminates external dependencies such as Node.js
+- Simplifies setup and reduces manual configuration
+- Ensures consistency across different environments
+- Minimizes potential compatibility issues
+
 ### Usage
 ```bash
 podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli <SPAShip CLI command-line arguments>

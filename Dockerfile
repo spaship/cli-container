@@ -1,18 +1,9 @@
 FROM node:22.12.0-alpine
 
 RUN addgroup -S spashipuser && \
-    adduser -S spashipuser -G spashipuser && \
-    apk add --no-cache gnupg curl
-
-USER spashipuser
-
-RUN curl -o- -L https://yarnpkg.com/install.sh | YARN_VERSION=1.22.22 sh
+    adduser -S spashipuser -G spashipuser
 
 WORKDIR /app
-
-RUN addgroup -S spashipuser && \
-    adduser -S spashipuser -G spashipuser && \
-    apk add --no-cache curl
 
 USER spashipuser
 

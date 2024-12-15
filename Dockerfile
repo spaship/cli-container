@@ -6,7 +6,7 @@ RUN useradd -m spashipuser
 
 USER spashipuser
 
-ARG SPASHIP_CLI_VERSION=latest
+ARG SPASHIP_CLI_VERSION=1.8.0
 
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash \
     && yarn global add @spaship/cli@$SPASHIP_CLI_VERSION

@@ -1,4 +1,4 @@
-# SPAShip CLI Container
+# SPAShip CLI Container [![Docker Repository on Quay](https://quay.io/repository/redhat_emp1/spaship-cli/status "Docker Repository on Quay")](https://quay.io/repository/redhat_emp1/spaship-cli)
 
 A self-contained SPAShip CLI container image to simplify your SPA deployments via SPAShip.
 

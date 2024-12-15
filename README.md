@@ -1,6 +1,6 @@
 # SPAShip CLI Container [![Docker Repository on Quay](https://quay.io/repository/redhat_emp1/spaship-cli/status "Docker Repository on Quay")](https://quay.io/repository/redhat_emp1/spaship-cli)
 
-A self-contained SPAShip CLI container image to simplify your SPA deployments via SPAShip.
+A self-contained, up-to-date SPAShip CLI container image to simplify your SPA deployments via SPAShip.
 
 This repository provides a container image hosted at [quay.io/redhat_emp1/spaship-cli](https://quay.io/redhat_emp1/spaship-cli) for running the SPAShip CLI tool in a containerized environment.
 

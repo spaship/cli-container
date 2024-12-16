@@ -1,7 +1,8 @@
 FROM node:22.12.0-alpine
 
 RUN addgroup -S spashipuser && \
-    adduser -S spashipuser -G spashipuser
+    adduser -S spashipuser -G spashipuser && \
+    apk add --no-cache bash
 
 WORKDIR /app
 

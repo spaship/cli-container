@@ -17,9 +17,3 @@ ENV NODE_OPTIONS="$NODE_OPTIONS --no-deprecation"
 ARG SPASHIP_CLI_VERSION=1.8.0
 
 RUN yarn global add @spaship/cli@$SPASHIP_CLI_VERSION
-
-# Set the ENTRYPOINT to spaship command directly
-ENTRYPOINT ["spaship"]
-
-# Default command arguments (can be overridden at runtime)
-CMD ["--help"]

@@ -14,20 +14,20 @@ This repository provides a container image hosted at [quay.io/redhat_emp1/spashi
 
 ### Usage
 ```bash
-podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli <SPAShip CLI command-line arguments>
+podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli spaship <SPAShip CLI command-line arguments>
 ```
 ### Creating a new SPA
 To create a SPA using the SPAShip CLI, use the following command:
 
 ```bash
-podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli init
+podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli spaship init
 ```
 ### Deploying a SPA
 
 To deploy a SPA using the SPAShip CLI, use the following command:
 
 ```bash
-podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli deploy
+podman run -v "$(pwd):/app" -it --rm quay.io/redhat_emp1/spaship-cli spaship deploy
 ```
 
 This mounts your current working directory into the `/app` directory inside the container.
@@ -37,7 +37,7 @@ This mounts your current working directory into the `/app` directory inside the 
 You can run the container and check the current SPAShip CLI version with the following command:
 
 ```bash
-podman run --rm quay.io/redhat_emp1/spaship-cli
+podman run --rm quay.io/redhat_emp1/spaship-cli spaship
 ```
 
 ## License

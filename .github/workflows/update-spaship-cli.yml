@@ -44,5 +44,3 @@ jobs:
           git add Dockerfile
           git commit -m "Update @spaship/cli to version $LATEST_VERSION"
           git push
-      - name: Keepalive the repository
-        uses: gautamkrishnar/keepalive-workflow@v2
